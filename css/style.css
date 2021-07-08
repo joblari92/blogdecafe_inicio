@@ -57,3 +57,50 @@ img{
 .centrar-texto {
     text-align: center;
 }
+
+/* Header */
+.header {
+    background-image: url(../img/banner.jpg);
+    height: 60rem;
+    background-size: cover;/* Para que ocupe todo el espacio */
+    background-repeat: no-repeat; /* Para que no se repita al ocupar todo el espacio */
+    background-position: center center; /* Para que se quede centrada al redimensionar. Lo ponemos dos veces para centrar vertical y horizontalmente */
+}
+.header__texto {
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 5rem;
+}
+@media (min-width: 768px) {
+    .header__texto {
+        margin-top: 15rem;
+    }
+}
+@media (min-width: 768px) {
+    .barra {
+        display:flex; /* Automáticamente alineará el contenido horizontalmente */
+        justify-content: space-between; /* Separará el contenido con el mayor espacio posible entre ellos en igual proporción llevándolo a los extremos */
+        align-items: center; /* Alineará el contenido a la misma altura */
+    }
+}
+.logo {
+    color: var(--blanco);
+}
+.logo__nombre {
+    font-weight: normal;
+}
+.logo__bold {
+    font-weight: bold;
+}
+.navegacion__enlace {
+    display: block; /* Los elementos se situarán uno debajo del otro */
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
+@media (min-width: 768px) {
+    .navegacion {
+        display: flex;
+        gap: 2rem;
+    }
+}
