@@ -1,0 +1,59 @@
+:root { /* Aquí especificamos las variables personalizadas que utilizaremos a lo largo del proyecto */
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #784d3c;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+html {
+    box-sizing: border-box; /* De este modo no hará falta que tengamos en cuenta el padding al determinar el tamaño de las cajas */
+    font-size: 62.5%; /* 1rem = 10px */
+}
+*, *:before, *::after {
+    box-sizing: inherit; /* Hace que todos los elementos hereden esta propiedad del padre, en este caso html */
+}
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/* Globales */
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto; /* El contenido se centrará automáticamente en la pantalla */
+}
+a{
+    text-decoration: none; /* Eliminados el subrayado de los enlaces */
+}
+h1, h2, h3, h4 {
+    font-family: var(--fuenteHeading);
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img{
+    max-width: 100%;
+}
+
+/* Utilidades */
+.no-margin {
+    margin: 0; /* Cuando añadamos esta clase a algún elemento le quitaremos el margen */
+}
+.no-padding {
+    padding: 0; /* Igual que la anterior pero para el padding */
+}
+.centrar-texto {
+    text-align: center;
+}
